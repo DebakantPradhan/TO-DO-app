@@ -1,0 +1,14 @@
+#add-btn {
+    background: #b771b1;
+    border-radius: 0.4rem;
+}
+
+
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+.input-container .form-control {
+    width: 50%;
+}
