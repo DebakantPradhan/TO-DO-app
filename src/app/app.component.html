@@ -10,19 +10,10 @@
       </form>
     </div>
   </nav>
-
-
+  <br>
   <div class="container">
     <h3 style="text-align: center;">Have a nice day!!</h3>
     <br>
-    <div class="input-container">
-      <input type="text" placeholder="Enter a task" class="form-control" [(ngModel)]="todoTitle"
-        (keyup.enter)="addItem()" />
-      <span style="margin-right: 10px;"></span>
-      <button type="submit" id="add-btn" (click)="addItem()">addTask</button>
-    </div>
-    <br>
-    <app-to-do [todos]="todosList"></app-to-do>
+    <app-to-do [todosList]="todos"></app-to-do>
   </div>
-
 </div>

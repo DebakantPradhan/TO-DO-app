@@ -15,23 +15,9 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent {
   title = 'TO-DO-app';
 
-  todoTitle :string = ""
-  todosList: Todo[] = [];
-  ngOnInit(){
-    this.todosList =[]
-    this.todoTitle = ""
-  }
+  todos: Todo[] = [];
 
-  addItem(){
-    if(this.todoTitle !== ""){
-      const newItem:Todo ={
-        slNo: 0,
-        title:this.todoTitle,
-        desc:"",
-        active:false
-      }
-      this.todosList.push(newItem)
-    }
-    this.todoTitle = ""
+  ngOnInit() {
+    this.todos = [];
   }
 }

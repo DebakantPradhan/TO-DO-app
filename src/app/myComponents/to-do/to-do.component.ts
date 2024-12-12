@@ -6,19 +6,28 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-to-do',
   standalone: true,
-  imports: [CommonModule,FormsModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './to-do.component.html',
-  styleUrls : ['./to-do.component.css']
+  styleUrls: ['./to-do.component.css']
 })
 export class ToDoComponent {
-  @Input() todos: Todo[] = [];
   
-
   
-
-
-
-  constructor() { 
-    this.todos = []
+  todoTitle: string = "";
+  @Input() todosList: Todo[] = [];
+  
+  addItem() {
+    if (this.todoTitle.trim()) {
+      const newItem: Todo = {
+        slNo: this.todosList.length + 1,
+        title: this.todoTitle,
+        desc: "",
+        active: false
+      };
+      this.todosList.push(newItem);
+    }
+    this.todoTitle = "";
   }
+
+  constructor() {}
 }

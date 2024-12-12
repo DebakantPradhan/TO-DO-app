@@ -1,3 +1,12 @@
-.list-group-item:first-child {
-    background-color:rgb(196, 218, 236);
+.list-group-item{
+    background-color:rgb(147 177 165);
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+.input-container .form-control {
+    width: 50%;
 }

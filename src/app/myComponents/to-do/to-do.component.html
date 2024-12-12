@@ -1,21 +1,36 @@
 <div class="container">
-    <ul 
-    class="list-group list-group-numbered">
-        <li class="list-group-item d-flex justify-content-between align-items-start"
-        *ngFor="let item of todos"
-        
+    <div class="input-container">
+        <input 
+            type="text" 
+            placeholder="Enter a task" class="form-control" 
+            [(ngModel)]="todoTitle"
+            (keyup.enter)="addItem()" 
+        />
+        <span style="margin-right: 10px;"></span>
+        <button type="submit" class="btn btn-outline-success" (click)="addItem()">addTask</button>
+    </div>
+    <br>
+    <ul class="list-group list-group-numbered">
+        <li 
+            class="list-group-item d-flex justify-content-between align-items-start" 
+            *ngFor="let item of todosList"
         >
             <div class="ms-2 me-auto">
                 <div class="fw-bold">
-                    
+
                     <label 
-                    class="form-check-label" 
-                    for="firstCheckbox"
-                    >{{item.title}}</label>
-                    
-                    
-                    <input class="form-check-input me-1" type="checkbox" [(ngModel)]="item.active" id="firstCheckbox" style="position: absolute; right:10%;">
-                    
+                        class="form-check-label" for="firstCheckbox"
+                    >
+                        {{item.title}}
+                    </label>
+
+
+                    <input 
+                        class="form-check-input me-1" type="checkbox" 
+                        [(ngModel)]="item.active" id="firstCheckbox"
+                        style="position: absolute; right:10%;"
+                    >
+
                 </div>
                 Content for list item
             </div>
