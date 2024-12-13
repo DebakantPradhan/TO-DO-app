@@ -1,5 +1,7 @@
-.list-group-item{
-    background-color:rgb(147 177 165);
+.list-group-item {
+    background-color: #282C34;
+    color: #F0F0F0;
+    border: 1px solid #383E48
 }
 
 .input-container {
@@ -9,4 +11,35 @@
 
 .input-container .form-control {
     width: 50%;
+}
+
+.delete-btn {
+    background-color: #cf3e1e;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.list-group-item input[type="checkbox"] {
+    accent-color: #1DB954;
+}
+
+/* Checked State */
+.list-group-item input[type="checkbox"]:checked {
+    background-color: #1DB954;
+    /* Green background */
+    color: #FFFFFF;
+    /* White checkmark */
+    border: 1px solid #1DB954;
+    /* Consistent border when checked */
+}
+
+.description{
+    width: 100%;
+  word-wrap: break-word; /* Break long words to fit within the container */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis (...) for overflowed text */
+  white-space: nowrap; 
 }

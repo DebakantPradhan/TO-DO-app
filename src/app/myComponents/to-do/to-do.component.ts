@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class ToDoComponent {
   
-  
+  todoDesc: string = "";
   todoTitle: string = "";
   @Input() todosList: Todo[] = [];
   
@@ -21,12 +21,17 @@ export class ToDoComponent {
       const newItem: Todo = {
         slNo: this.todosList.length + 1,
         title: this.todoTitle,
-        desc: "",
+        desc: this.todoDesc,
         active: false
       };
       this.todosList.push(newItem);
     }
     this.todoTitle = "";
+    this.todoDesc = "";
+  }
+
+  deleteItem(index: number) {
+    this.todosList = this.todosList.filter((item) => item.slNo !== index);
   }
 
   constructor() {}
