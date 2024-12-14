@@ -72,19 +72,6 @@ src/
 ├── assets/
 └── styles/
 ```
-src/
-├── app/
-│   ├── components/
-│   │   └── todo/
-│   ├── services/
-│   │   └── timer.service.ts
-│   ├── models/
-│   │   └── todo.interface.ts
-│   └── pipes/
-│       └── filter.pipe.ts
-├── assets/
-└── styles/
-
 
 ##Testing
 Unit Tests: ng test
