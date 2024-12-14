@@ -73,15 +73,17 @@ src/
 └── styles/
 ```
 
-##Testing
-Unit Tests: ng test
-E2E Tests: ng e2e
-Build
-Production build: ng build --prod Output directory: dist/
+## Testing
+- Unit Tests: `ng test`
+- E2E Tests: `ng e2e`
 
-##Contributing
-Fork repository
-Create feature branch
-Commit changes
-Push to branch
-Create Pull Request
+## Build
+- Production build: `ng build --prod`
+- Output directory: `dist/`
+
+## Contributing
+1. Fork repository
+2. Create feature branch
+3. Commit changes
+4. Push to branch
+5. Create Pull Request
