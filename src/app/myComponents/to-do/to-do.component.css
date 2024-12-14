@@ -36,10 +36,44 @@
     /* Consistent border when checked */
 }
 
-.description{
-    width: 100%;
-  word-wrap: break-word; /* Break long words to fit within the container */
-  overflow: hidden; /* Hide overflow content */
-  text-overflow: ellipsis; /* Add ellipsis (...) for overflowed text */
-  white-space: nowrap; 
+
+.task-content {
+    min-width: 0;
+    /* Important for text-truncate to work */
+    margin-right: 1rem;
+}
+
+.task-header {
+    max-width: 100%;
+}
+
+.form-check-label {
+    max-width: 70%;
+}
+
+.description {
+    color: #8f9499;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.action-buttons {
+    min-width: fit-content;
+}
+
+@media (max-width: 576px) {
+    .action-buttons {
+        display: flex;
+        gap: 0.5rem !important;
+    }
+
+    .delete-btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+    }
 }
