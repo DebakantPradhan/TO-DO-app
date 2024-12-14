@@ -46,9 +46,32 @@ ng generate service service-name
 ng build --prod
 
 # Run tests
-ng test
+```bash
+# Clone repository
+git clone [repository-url]
 
-##Project Structure
+# Install dependencies
+npm install
+
+# Start development server
+ng serve
+```
+
+## Project Structure
+```plaintext
+src/
+├── app/
+│   ├── components/
+│   │   └── todo/
+│   ├── services/
+│   │   └── timer.service.ts
+│   ├── models/
+│   │   └── todo.interface.ts
+│   └── pipes/
+│       └── filter.pipe.ts
+├── assets/
+└── styles/
+```
 src/
 ├── app/
 │   ├── components/
