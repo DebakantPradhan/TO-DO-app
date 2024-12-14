@@ -1,27 +1,77 @@
-# TODOApp
+# Angular Todo Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+## Overview
+A modern Todo application built with Angular 15+, featuring real-time task management, search functionality, and timer tracking.
 
-## Development server
+## Features
+- ✨ Create, Read, Update, Delete (CRUD) operations for tasks
+- 🔍 Real-time search filtering
+- ⏱️ Task creation timestamp tracking
+- 💾 Local storage persistence
+- 📱 Responsive design using Bootstrap
+- ⌛ Global session timer
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technologies Used
+- Angular 15+
+- TypeScript
+- Bootstrap 5
+- RxJS
+- Angular Forms
+- Custom Pipes
 
-## Code scaffolding
+## Prerequisites
+- Node.js (v14+)
+- npm (v6+)
+- Angular CLI (`npm install -g @angular/cli`)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup
+```bash
+# Clone repository
+git clone [repository-url]
 
-## Build
+# Install dependencies
+npm install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Start development server
+ng serve
 
-## Running unit tests
+##Development Commands
+# Generate new component
+ng generate component component-name
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Generate service
+ng generate service service-name
 
-## Running end-to-end tests
+# Build for production
+ng build --prod
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Run tests
+ng test
 
-## Further help
+##Project Structure
+src/
+├── app/
+│   ├── components/
+│   │   └── todo/
+│   ├── services/
+│   │   └── timer.service.ts
+│   ├── models/
+│   │   └── todo.interface.ts
+│   └── pipes/
+│       └── filter.pipe.ts
+├── assets/
+└── styles/
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+##Testing
+Unit Tests: ng test
+E2E Tests: ng e2e
+Build
+Production build: ng build --prod Output directory: dist/
+
+##Contributing
+Fork repository
+Create feature branch
+Commit changes
+Push to branch
+Create Pull Request
